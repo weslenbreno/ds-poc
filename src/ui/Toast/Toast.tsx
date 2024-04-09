@@ -28,8 +28,6 @@ export const Description = ({ children }: { children: React.ReactNode }) => {
     );
 }
 
-
-
 export const Toast = Root as typeof Root & {
     Title: typeof Title;
     Description: typeof Description;

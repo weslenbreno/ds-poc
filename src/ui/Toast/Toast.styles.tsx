@@ -6,7 +6,7 @@ const VIEWPORT_PADDING = theme.space[4];
 
 export const ToastViewport = styled(ToastPrimitive.Viewport, {
     position: 'fixed',
-    bottom: '$0',
+    top: '$0',
     right: '$0',
     display: 'flex',
     flexDirection: 'column',
@@ -22,16 +22,16 @@ export const ToastViewport = styled(ToastPrimitive.Viewport, {
 
 export const ToastTitle = styled(ToastPrimitive.Title, {
     gridArea: 'title',
-    marginBottom: '$1',
-    fontWeight: 500,
-    color: '$blackNormal',
+    marginBottom: '$2',
+    fontWeight: "$bold",
+    color: '$whiteDark',
     fontSize: '$2',
 });
 
 export const ToastDescription = styled(ToastPrimitive.Description, {
     gridArea: 'description',
-    margin: '$0',
-    color: '$grayNormal',
+    margin: '$2',
+    color: '$whiteNormal',
     fontSize: '$1',
     lineHeight: '$medium',
 });
@@ -52,7 +52,7 @@ export const swipeOut = keyframes({
 });
 
 export const ToastRoot = styled(ToastPrimitive.Root, {
-    backgroundColor: '$whiteNormal',
+    backgroundColor: '$greenNormal',
     borderRadius: '$1',
     boxShadow: 'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
     padding: '$3',

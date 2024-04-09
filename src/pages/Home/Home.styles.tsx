@@ -1,18 +1,17 @@
-import { violet } from "@radix-ui/colors";
-import { styled } from "../stitches.config";
+import { styled } from "../../../stitches.config";
 
 export const Fieldset = styled('fieldset', {
     all: 'unset',
     display: 'flex',
-    gap: 20,
+    gap: "$3",
     alignItems: 'center',
-    marginBottom: 15,
+    marginBottom: "$4",
 });
 
 export const Label = styled('label', {
-    fontSize: 15,
-    color: violet.violet11,
-    width: 90,
+    fontSize: "$2",
+    color: "$blackDark",
+    width: "$10",
     textAlign: 'right',
 });
 
@@ -23,15 +22,13 @@ export const Input = styled('input', {
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 4,
+    borderRadius: "$4",
     padding: '0 10px',
-    fontSize: 15,
-    lineHeight: 1,
-    color: violet.violet11,
-    boxShadow: `0 0 0 1px ${violet.violet7}`,
-    height: 35,
-
-    '&:focus': { boxShadow: `0 0 0 2px ${violet.violet8}` },
+    fontSize: "$2",
+    lineHeight: "$normal",
+    color: "$blackNormal",
+    height: "$6",
+    backgroundColor: "$grayLight",
 });
 
 export const Flex = styled('div', { display: 'flex' });
